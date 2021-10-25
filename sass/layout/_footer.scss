@@ -1,0 +1,115 @@
+/* -----FOOTER----- */
+
+.footer {
+  background: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  color: var(--footer-logo);
+}
+
+.footer__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+  margin-bottom: 9px;
+  margin-top: 20px;
+}
+
+.footer__item {
+  margin-bottom: 9px;
+}
+
+.footer__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__container > a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.social__title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__container_social {
+  margin-left: 70px;
+}
+
+.footer__form {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 93px;
+}
+
+.footer__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 16px;
+  background: inherit;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__btn {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.btn__icon {
+  margin-left: 10px;
+}
