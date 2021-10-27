@@ -2,11 +2,11 @@
 .advantages-list__item {
   display: block;
   width: 100%;
-  margin-right: 15px;
-  margin-left: 15px;
   margin-bottom: 30px;
   @media screen and (min-width: 480px) {
-    width: 448px;
+    max-width: 448px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
@@ -33,7 +33,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479px) {
     text-align: center;
   }
 }
