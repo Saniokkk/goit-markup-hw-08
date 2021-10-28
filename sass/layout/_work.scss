@@ -1,7 +1,11 @@
 /* -----WORK----- */
 
 .work {
-  padding-top: 0;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 0;
+  }
 }
 
 .work__title {
