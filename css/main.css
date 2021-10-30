@@ -787,8 +787,7 @@ img {
 
 .projects-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .projects-filter .projects-filter__item + .projects-filter__item {

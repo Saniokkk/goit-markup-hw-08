@@ -35,8 +35,11 @@
 
 .projects-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  // display: flex;
+  // justify-content: center;
+  // margin-bottom: 50px;
 }
 
 .projects-filter .projects-filter__item + .projects-filter__item {
