@@ -69,19 +69,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -275,6 +275,16 @@ img {
   border-radius: 2px;
 }
 
+.menu-open-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: grey;
+}
+
 /* -----HERO----- */
 .hero {
   background: var(--secondary-background-color);
@@ -357,12 +367,6 @@ img {
   display: block;
   width: 100%;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .advantages-list__item {
-    max-width: 450px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -511,8 +515,8 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 768px) {
-  .command__item .command__item::not(:last-child) {
+@media screen and (max-width: 767px) {
+  .command__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -674,6 +678,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__positioning {
     justify-content: flex-start;
+    align-items: baseline;
   }
 }
 
@@ -690,7 +695,7 @@ img {
   margin-top: 20px;
 }
 
-.footer__item {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -726,7 +731,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__container {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: baseline;
   }
 }
 
@@ -736,6 +741,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer__container_social {
+    align-items: flex-start;
     margin-left: 70px;
     margin-bottom: 0;
   }
@@ -897,11 +903,28 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .projects-filter .projects-filter__item {
+    margin-bottom: 0;
+  }
+}
+
+.projects-list {
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
   .projects-list {
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-list {
+    margin-top: 35px;
   }
 }
 
