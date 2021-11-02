@@ -28,7 +28,7 @@
   transform: translate(-50%, -50%) scale(1) rotate(0);
   margin: 0;
   padding: 40px;
-  min-width: 450px;
+  min-width: 455px;
   min-height: 609px;
   background-color: #ffffff;
   @include transition(transform, 500ms);
@@ -42,10 +42,14 @@
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--titel-color);
   margin-bottom: 12px;
+  @media screen and(min-width: 1199px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .client-data__input-icon {
@@ -121,8 +125,9 @@
 .checkbox__label {
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+
   color: var(--text-color);
   display: flex;
   /* position: relative; */
@@ -143,6 +148,10 @@
   & a {
     color: var(--accent-color);
     margin-left: 5px;
+  }
+  @media screen and(min-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
