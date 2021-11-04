@@ -166,7 +166,7 @@
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  background: grey;
+  background: transparent;
   @include transition(fill);
   &:hover,
   &:focus {
