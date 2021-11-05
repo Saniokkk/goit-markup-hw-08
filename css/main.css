@@ -340,19 +340,18 @@ img {
   top: 0;
   left: 0;
   padding: 48px 40px;
-  z-index: 999;
-}
-
-.mob-menu.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
   }
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
 }
 
 .menu-open-btn,
