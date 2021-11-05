@@ -26,6 +26,9 @@
     margin-left: -30px;
     margin-bottom: -30px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .command__name {
